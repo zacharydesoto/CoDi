@@ -1,0 +1,16 @@
+[
+    ["age", "categorical"],
+    ["sex", "categorical"],
+    ["cp", "categorical"],
+    ["trestbps", "continuous"],
+    ["chol", "continuous"],
+    ["fbs", "categorical"],
+    ["restecg", "categorical"],
+    ["thalach", "continuous"],
+    ["exang", "categorical"],
+    ["oldpeak", "continuous"],
+    ["slope", "categorical"],
+    ["ca", "categorical"],
+    ["thal", "categorical"],
+    ["label", "categorical"]
+]

@@ -6,7 +6,7 @@ CONTINUOUS = "continuous"
 ORDINAL = "ordinal"
 
 def verify_table(table, meta):
-    for _id, item in enumerate(meta):
+    for _id, item in enumerate(meta['columns']):
         if item['type'] == CONTINUOUS:
             assert np.all(item['min'] <= table[:, _id])
             assert np.all(table[:, _id] <= item['max'])
@@ -19,7 +19,7 @@ def verify(datafile, metafile):
         meta = json.load(f)
 
 
-    for item in meta:
+    for item in meta['columns']:
         assert 'name' in item
         assert item['name'] is None or type(item['name']) == str
 
